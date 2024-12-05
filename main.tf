@@ -142,6 +142,7 @@ resource "azurerm_role_assignment" "avd_users_Terraform_AVD_Hostpool_users" {
 #number
 
 variable "avd_host_pool_size" {
+  default  = 1
   type        = number
   description = "Number of session hosts to add to the AVD host pool."
 }
